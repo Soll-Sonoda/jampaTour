@@ -1,0 +1,46 @@
+/* Reset básico para remover margens e paddings padrões*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 3px 3px 10px rgb(185, 185, 185);
+}
+
+.contato {
+    background-color: #00AFEF;
+    border-radius: 20px;
+    color: #f5f5f5;
+    box-shadow: 3px 3px 10px rgb(185, 185, 185);
+}
