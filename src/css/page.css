@@ -66,6 +66,12 @@ nav ul li a {
     object-fit: cover;
 }
 
+.imagem-principal {
+    width: 1600px; 
+    height: 780px; 
+}
+
+
 .imagem-secundaria {
     z-index: 1;
     max-width: 300px;
