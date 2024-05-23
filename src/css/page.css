@@ -33,13 +33,14 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 14px;
+    padding: 12px;
     background-color: #f5f5f5;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    margin-top: 4px;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -60,21 +61,24 @@ nav ul li a {
     text-shadow: 3px 3px 10px rgb(185, 185, 185);
 }
 
+.botao-imagem {
+    width: 52px; 
+    height: 25px;
+    background-image: url('../imagens/logo\ jampa\ tour\ 1.png'); 
+    background-size: contain; /* Ou 'contain' para preservar proporção */
+    background-position: center; /* Posicionamento da imagem */
+    border: none; /* Remover borda padrão do botão */
+    cursor: pointer;
+    background-color: #f5f5f5;
+    margin-left: 20px;
+    display: flex;
+}
+
 .contato {
     background-color: #00AFEF;
     border-radius: 20px;
     color: #f5f5f5;
     box-shadow: 3px 3px 10px rgb(185, 185, 185);
-}
-
-.logo {
-    max-width: 50px;
-    max-height: 30px;
-    width: auto;
-    height: auto;
-    margin-left: 20px;
-    position:absolute;
-    top: 8px;
 }
 
 .container-central {
