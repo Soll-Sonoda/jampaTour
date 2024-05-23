@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Montserrat-black';
+    src: url('../fonte/Montserrat/static/Montserrat-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../fonte/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-medium';
+    src: url('../fonte/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Reset básico para remover margens e paddings padrões*/
 * {
     margin: 0;
@@ -12,7 +33,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 14px;
     background-color: #f5f5f5;
 }
 
@@ -30,7 +51,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-family: 'Montserrat-medium';
+    font-size: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -55,15 +77,11 @@ nav ul li a {
     top: 8px;
 }
 
-.grid-container {
-    display: grid;
-    width: 300px;
-    height: 200px;
-}
-
-.imagem {
-    grid-area: 1 / 1;
-    object-fit: cover;
+.container-central {
+    background-image: url('../imagens/FOTO\ MAR\ OK\ 1.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
 .imagem-secundaria {
@@ -76,12 +94,29 @@ nav ul li a {
     margin-left: 100px;
 }
 
+.textos {
+    display: grid;
+}
+
 .texto-principal {
     color: #f5f5f5;
-    font-size: 30px;
+    font-size: 36px;
     text-align: justify;
-    max-width: 900px;
-    margin-top: 80px;
+    max-width: 800px;
+    margin-top: 15px;
     margin-left: 100px;
-    font-family: inter;
+    font-family: 'Montserrat-black';
+    text-shadow: 3px 3px 10px rgb(0, 0, 0);
 }
+
+.paragrafo-principal {
+    color: #FCC522;
+    text-shadow: 2px 3px 6px rgb(0, 0, 0);
+    text-align: justify;
+    max-width: 800px;
+    margin-left: 100px;
+    font-family: 'Montserrat-bold';
+    font-size: 22px;
+}
+
+
