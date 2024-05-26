@@ -1,0 +1,331 @@
+@font-face {
+    font-family: 'Montserrat-black';
+    src: url('../fonte/Montserrat/static/Montserrat-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../fonte/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-medium';
+    src: url('../fonte/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset básico para remover margens e paddings padrões*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #f5f5f5;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 4px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat-medium';
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 3px 3px 10px rgb(185, 185, 185);
+}
+
+.botao-imagem {
+    width: 52px; 
+    height: 25px;
+    background-image: url('../imagens/logo\ jampa\ tour\ 1.png'); 
+    background-size: contain; /* Ou 'contain' para preservar proporção */
+    background-position: center; /* Posicionamento da imagem */
+    border: none; /* Remover borda padrão do botão */
+    cursor: pointer;
+    background-color: #f5f5f5;
+    margin-left: 20px;
+    display: flex;
+}
+
+.contato {
+    background-color: #00AFEF;
+    border-radius: 20px;
+    color: #f5f5f5;
+    box-shadow: 3px 3px 10px rgb(185, 185, 185);
+}
+
+.container-central {
+    background-image: url('../imagens/FOTO\ MAR\ OK\ 1.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.imagem-secundaria {
+    z-index: 1;
+    max-width: 300px;
+    max-height: 600px;
+    height: auto;
+    width: auto;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.textos {
+    display: grid;
+}
+
+.texto-principal {
+    color: #f5f5f5;
+    font-size: 36px;
+    text-align: justify;
+    max-width: 800px;
+    margin-top: 15px;
+    margin-left: 100px;
+    font-family: 'Montserrat-black';
+    text-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+.paragrafo-principal {
+    color: #FCC522;
+    text-shadow: 2px 3px 6px rgb(0, 0, 0);
+    text-align: justify;
+    max-width: 800px;
+    margin-left: 100px;
+    font-family: 'Montserrat-bold';
+    font-size: 22px;
+}
+
+.servicos {
+    margin-top: 50px;
+}
+
+.titulo-servicos {
+    color: #343434;
+    font-size: 34px;
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: 'Montserrat-black';
+    text-shadow: 3px 3px 5px rgba(106, 106, 106, 0.491);
+}
+
+.descricao-servicos {
+    color: #343434;
+    text-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Montserrat-medium';
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.container-servicos {
+    display: flex;
+    flex-direction: row; /* Alinha os itens na direção horizontal (linha) */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.praia-tambau {
+    border: 2px solid #343434;
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+}
+
+.titulo {
+    font-family: 'Montserrat-bold';
+    font-size: 22px;
+    color: #343434;
+    text-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+}
+
+.titulo-tambau {
+    margin-left: 50px;
+}
+
+.img-tambau {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 300px;
+    margin-left: 45px;
+    margin-top: 10px;
+    box-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+}
+
+.descricao-tambau {
+    font-family: 'Montserrat-medium';
+    font-size: 14px;
+    text-align: justify;
+    margin: 8px;
+    text-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+}
+
+.praia-bessa {
+    border: 2px solid #343434;
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+}
+
+.titulo-bessa {
+    margin-left: 65px;
+}
+
+.img-bessa {
+    width: auto;
+    height: auto;
+    max-height: 130px;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+
+.descricao-bessa {
+    font-family: 'Montserrat-medium';
+    font-size: 14px;
+    text-align: justify;
+    margin: 8px;
+    text-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+}
+
+.praia-cabo-branco {
+    border: 2px solid #343434;
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+}
+
+.titulo-cabo-branco {
+    margin-left: 26px;
+}
+
+.img-cabo-branco {
+    width: auto;
+    height: auto;
+    max-height: 130px;
+    margin-left: 45px;
+    margin-top: 10px;
+    box-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+}
+
+.descricao-cabo-branco {
+    font-family: 'Montserrat-medium';
+    font-size: 14.3px;
+    text-align: justify;
+    margin: 8px;
+    text-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+}
+
+.container-sobre-nos {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.titulo-sobre-nos {
+    font-family: 'Montserrat-black';
+    font-size: 34px;
+    color: #343434;
+    text-shadow: 3px 3px 5px rgba(106, 106, 106, 0.491);
+}
+
+.descricao-sobre-nos {
+    color: #343434;
+    text-shadow: 2px 3px 3px rgba(161, 161, 161, 0.365);
+    text-align: justify;
+    margin-right: 100px;
+    font-family: 'Montserrat-medium';
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #00AFEF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.titulo-contato {
+    font-family: 'Montserrat-black';
+    font-size: 34px;
+    color: #f5f5f5;
+    text-shadow: 3px 3px 5px rgba(106, 106, 106, 0.491);
+    margin-left: 100px;
+}
+
+.sub-titulo-contato {
+    margin-left: 120px;
+    margin-top: 8px;
+    font-family: 'Montserrat-bold';
+    font-size: 20px;
+    color: #f5f5f5;
+    text-shadow: 3px 3px 5px rgba(106, 106, 106, 0.491);
+}
+
+ footer li {
+    margin-left: 130px;
+    margin-top: 8px;
+    font-family: 'Montserrat-medium';
+    font-size: 18px;
+    text-shadow: 3px 3px 5px rgba(106, 106, 106, 0.491);
+}
+
+footer li a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.facebook {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.instagram {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.whatsapp {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
